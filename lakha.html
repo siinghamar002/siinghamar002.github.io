@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>hello</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+$(document).ready(function(){
+$("#submitbtn").click(function(){
+console.log("it's work");
+$(".ok").text("bye");
+});
+});
+</script>
+</head>
+<body style="background-color:cyan">
+<div class="container">
+<div class="row" style="margin-top:50px">
+	<div align="center" class="col-md-offset-2 col-md-8">
+		<span class="ok" id="msg1">hi</span>
+		<span class="ok" id="msg2">hello</span>
+		<button id="submitbtn" class="btn btn-info">submit</button>
+		<button class="btn btn-danger">successfully</button>
+	</div>
+</div>
+</div>
+</body>
+</html>
