@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Button</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row" style="margin-top:50px">
+        <div class="col-md-offset-4 col-md-8">
+            <button class="btn btn-danger" id="btn">submit</button>
+            <div class="panel" id="set" ></div><br><br>
+        </div>
+        </div>
+    </div>
+<script>
+    var count=0;
+  $(document).ready(function () {
+      $("#btn").click(function () {
+          count++;
+          $("#set").html("counter " +count) ;
+      });
+
+  });
+</script>
+</body>
+</html>
