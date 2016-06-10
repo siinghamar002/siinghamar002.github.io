@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Button</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row" style="margin-top:50px">
+            <div class="col-md-offset-4 col-md-8">
+                <button class="btn btn-info" id="btn">hello</button><br><br>
+                <div class="col-md-4" style="border:double"id="panel">
+                    <div style="text-align: center;font-size: x-large">Admin Login</div><br><br>
+                   <div class="for email"> <label>Email:</label><input type="text" required="required" class="form-control"></div>
+                    <label>Password</label><input type="password" required="required" class="form-control">
+                    <button class="btn btn-info">submit</button>
+            </div>
+            </div>
+        </div>
+    </div>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            $("#panel").slideUp("slow");
+        });
+    });
+</script>
+</body>
+</html>
