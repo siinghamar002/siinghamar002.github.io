@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>css</title>
+    <!-- Latest compiled and minified CSS (=== strictly compared) -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row" style="margin-top:50px">
+    <div class="col-md-offset-4 col-md-8">
+        <input type="radio" value="car" name="one">car
+        <input type="radio" name="one" value="bike">bike<br><br>
+        <div class="red box">i have a car</div><br>
+        <div class="green box">i have a bike</div></div>
+
+
+    </div>
+</div>
+</div>
+<script>
+    $(document).ready(function () {
+       $('input [type="radio"]').click(function () {
+           if($(this).attr("value")=="car"){
+               $(".box").not(".red").hide();
+               $(".red").css("border" , "1px solid red")
+               $(".red").show();
+           }
+           if($(this).attr("value")=="bike") {
+               $(".box").not(".green").hide();
+               $(".green").css("border", "1px solid red")
+               $(".green").show();
+           }
+       });
+    });
+</script></body>
+</html>
